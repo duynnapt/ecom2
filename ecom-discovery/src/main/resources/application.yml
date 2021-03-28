@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ecom-discovery
+logging:
+  level:
+    org.springframework: info
+#server:
+#  port: 8882 khong override duoc
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - env
+          - metrics
+          - prometheus
+
+

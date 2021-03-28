@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: local
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/duynnapt/ecom2-configure
+          default-label: develop
+ecom:
+  msg: "DEFAULT env in config-server"
+
+---
+spring:
+  profiles: loal
+ecom:
+  msg: "Local env in config-server"
+
+---
+spring:
+  profiles: dev
+ecom:
+  msg: "Development env in config-server"
+

@@ -2,7 +2,10 @@ spring:
   application:
     name: ecom-core
   profiles:
-    active: local
+#    active: dev --> fixed profile when run "mvn spring-boot:run"
+    active: ${active_profile:dev}
+    # at run time: "export active_profile=dev && mvn clean spring-boot:run"
   cloud:
     config:
       uri: http://localhost:8888
+      label: dvelop

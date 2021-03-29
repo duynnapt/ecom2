@@ -12,10 +12,6 @@ import java.net.UnknownHostException;
 import java.util.TimeZone;
 
 @SpringBootApplication
-//@EnableAsync
-//@EnableDiscoveryClient
-//@EnableResourceServer
-//@EnableConfigurationProperties(KafkaProperties.class)
 public class EcomCoreApplication {
     private static final Logger log = LoggerFactory.getLogger(EcomCoreApplication.class);
 

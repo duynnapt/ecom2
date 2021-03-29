@@ -61,7 +61,7 @@
         </plugins>
     </build>
 
-<!--    chu y: phai lay o repo nay-->
+<!--    this repo for CLOUD config-->
     <repositories>
         <repository>
             <id>spring-milestones</id>

@@ -65,6 +65,7 @@
         </plugins>
     </build>
 
+<!--    this repo for CLOUD config-->
     <repositories>
         <repository>
             <id>spring-milestones</id>

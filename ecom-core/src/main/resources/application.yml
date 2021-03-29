@@ -24,3 +24,25 @@ ecom:
   info:
     description: "This is good start, is overridden by local service"
     version: V1.2
+  db:
+    driver: "com.mysql.jdbc.Driver"
+    user: root
+    pass: adminadmin
+    url: "jdbc:mysql://localhost:3306/mydb"
+
+---
+spring:
+  profiles:
+    active: dev
+ecom:
+  info:
+    description: "This is not overridden"
+    version: V1.2
+  db:
+    driver: "com.mysql.jdbc.Driver"
+    user: root
+    pass: adminadmin
+    url: "jdbc:mysql://localhost:3306/mydb"
+
+
+
